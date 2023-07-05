@@ -1,3 +1,4 @@
+# -*- coding: utf-8-*-
 import random
 
 # Configuration
@@ -24,7 +25,9 @@ if(letter_l): list += letter_l_list
 while(1):
 
     for cnt in range(digit):
-     print(random.choice(list), end="")
+        print(random.choice(list), end="")
+        # print("\033[96m%s\033[0m" % random.choice(list), end="") # color ver.
 
-    print()
-    input('Press any key to rebuild.')
+    print() # New line
+    input("Press any key to rebuild...") # Keep program
+    print() # New line
